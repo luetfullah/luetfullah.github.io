@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Lütfullah Yigit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lütfullah Yigit</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,174 +12,177 @@
         };
     </script>
     <style>
-        .skill {
-            padding: 0.5rem;
-            text-align: center;
+        .project {
+            background-color: #2a3138;
+            /* Gray-300 */
+            padding: 1rem;
+            height: 6rem;
+            margin-top: 1rem;
+            position: relative;
+            /* Wichtig für die Positionierung des Pfeils */
         }
 
-        .skill:hover {
-            background-color: #cbd5e1;
-            /* Gray-300 */
+        .project span {
+            position: absolute;
+            bottom: 0.5rem;
+            /* Abstand vom unteren Rand */
+            right: 0.5rem;
+            /* Abstand vom rechten Rand */
+        }
+
+        .weitere-infos {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+        }
+
+        .project {
+            position: relative;
         }
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
     <div class="container mx-auto p-4 max-w-screen-md">
-        <div class="columns-2">
-            <div>
-                <h1 class="text-4xl font-bold">Hi, ich bin Lüt</h1>
-                <h2 class="text-2xl font-semibold">Lütfullah Yigit</h2>
-                <h3 class="text-1xl font-semibold">Ingenieur &bull; Software Entwickler</h3>
+        <div class="flex flex-col items-center lg:flex-row lg:items-center lg:justify-between">
+            <div class="text-center lg:text-left">
+                <h2 class="font-bold">M.Sc.</h2>
+                <h1 class="font-bold">Lütfullah Yigit</h1>
+                <h3 class="font-semibold py-2">
+                    Softwareentwicklung &dash; Ingenieurswesen
+                </h3>
                 <button class="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
-                    Kontaktieren Sie mich
+                    Kontakt aufnehmen
                 </button>
             </div>
             <img src="https://avatars.githubusercontent.com/u/11111111?v=4" alt="Profile Picture"
-                class="rounded-full w-48 h-48 mx-auto mb-4">
+                class="rounded-full w-48 h-48 mt-4 lg:mt-0 lg:ml-4">
         </div>
-        <div class="mt-8">
-            <h2 class="text-2xl font-semibold">Über mich</h2>
-            <p class="my-2">Ich bin ein Ingenieur und Softwareentwickler mit Hintergrund im Maschinenbau und der
-                Elektrotechnik.
-                Ich liebe es, Probleme zu lösen und neue Lösungen zu entwickeln.</p>
-            <div class="columns-3 my-8 flex justify-between">
-                <div class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                    </svg>
 
-                    <p>28 Jahre alt</p>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
-                    </svg>
-
-                    <p>Nordrhein-Westfalen</p>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-                    </svg>
-
-                    <p>Hobbys</p>
-                </div>
-            </div>
-        </div>
-        <div class="mt-8 grid grid-cols-2 gap-4">
+        <div class="mt-8 grid grid-cols-1 lg:gap-4 lg:grid-cols-2">
             <div>
-                <h2 class="text-2xl font-semibold mb-2">Über mich</h2>
-                <h3 class="text-xl font-semibold mb-1">Berufserfahrung</h3>
-                <div class="flex space-x-2 mb-4">
-                    <div class="w-1/8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
-                        </svg>
-                    </div>
-                    <div class="">
-                        <p class="font-bold">Modell- und Softwareentwickler</p>
-                        <p class="italic font-thin">@ FEV EVA GmbH</p>
-                        <p>Entwicklung Batteriemanagement-Systeme BMW Gen6</p>
-
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mb-1">Studium</h3>
-                <div class="flex space-x-2 mb-4">
-                    <div class="w-1/8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                        </svg>
-
-                    </div>
-                    <div class="">
-                        <p class="font-bold">M.Sc. Maschinenbau</p>
-                        <p class="italic font-thin">@ Ruhr-Universität Bochum</p>
-                        <p>Masterarbeit: "Automatische Parametrierung der zonalen modellprädiktiven Klimaregelung in
-                            Fahrzeugen" <span class="italic font-thin">@ BMW Group</span></p>
-                    </div>
-                </div>
-                <div class="flex space-x-2 mb-4">
-                    <div class="w-1/8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                        </svg>
-
-                    </div>
-                    <div class="">
-                        <p class="font-bold">B.Eng. Maschinenbau</p>
-                        <p class="italic font-thin">@ FH Bochum</p>
-                        <p>Bachelorarbeit: "CO2-neutrale Energieversorgung mit Wärme- und Kältenetzen" <span
-                                class="italic font-thin">@ Siemens Energy AG</span></p>
-                    </div>
-                </div>
-                <div class="flex space-x-2 mb-4">
-                    <div class="w-1/8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                        </svg>
-
-                    </div>
-                    <div class="">
-                        <p class="font-bold">B.Eng. Elektrotechnik</p>
-                        <p class="italic font-thin">@ FH Südwestfalen</p>
-                        <p>Teilzeitstudium (Abschluss vsl. 2026)</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2 class="text-2xl font-semibold">Projekte & Skills</h2>
-                <div class="flex">
-                    <div class="flex-1 text-center skill">Regelungstechnik</div>
-                    <div class="flex-1 text-center skill">Fahrzeugtechnik</div>
-                    <div class="flex-1 text-center skill">
-                        <div class="flex-1 flex items-center justify-center space-x-2">
-                            <div class="w-12 h-12"> <!-- Adjust width and height using Tailwind classes -->
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 306 344.35"
-                                    class="w-full h-full">
-                                    <path fill="#00599C" d="M302.107,258.262c2.401-4.159,3.893-8.845,3.893-13.053V99.14c0-4.208-1.49-8.893-3.892-13.052L153,172.175
-                                       L302.107,258.262z" />
-                                    <path fill="#004482"
-                                        d="M166.25,341.193l126.5-73.034c3.644-2.104,6.956-5.737,9.357-9.897L153,172.175L3.893,258.263
-                                       c2.401,4.159,5.714,7.793,9.357,9.896l126.5,73.034C147.037,345.401,158.963,345.401,166.25,341.193z" />
-                                    <path fill="#659AD2"
-                                        d="M302.108,86.087c-2.402-4.16-5.715-7.793-9.358-9.897L166.25,3.156c-7.287-4.208-19.213-4.208-26.5,0
-                                       L13.25,76.19C5.962,80.397,0,90.725,0,99.14v146.069c0,4.208,1.491,8.894,3.893,13.053L153,172.175L302.108,86.087z" />
-                                    <g>
-                                        <path fill="#FFFFFF"
-                                            d="M153,274.175c-56.243,0-102-45.757-102-102s45.757-102,102-102c36.292,0,70.139,19.53,88.331,50.968
-                                           l-44.143,25.544c-9.105-15.736-26.038-25.512-44.188-25.512c-28.122,0-51,22.878-51,51c0,28.121,22.878,51,51,51
-                                           c18.152,0,35.085-9.776,44.191-25.515l44.143,25.543C223.142,254.644,189.294,274.175,153,274.175z" />
-                                    </g>
-                                    <g>
-                                        <polygon fill="#FFFFFF"
-                                            points="255,166.508 243.666,166.508 243.666,155.175 232.334,155.175 232.334,166.508 221,166.508 
-                                           221,177.841 232.334,177.841 232.334,189.175 243.666,189.175 243.666,177.841 255,177.841 	" />
-                                    </g>
-                                    <g>
-                                        <polygon fill="#FFFFFF"
-                                            points="297.5,166.508 286.166,166.508 286.166,155.175 274.834,155.175 274.834,166.508 263.5,166.508 
-                                           263.5,177.841 274.834,177.841 274.834,189.175 286.166,189.175 286.166,177.841 297.5,177.841 	" />
-                                    </g>
+                <div id="berufserfahrung" class="mb-4">
+                    <h2 class="text-2xl font-bold mb-2">Berufserfahrung</h2>
+                    <div class="flex flex-col">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-full h-full">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" />
+                                    <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
                                 </svg>
+                            </div>
+                            <div>
+                                <p class="text-lg font-semibold">Modell- und Softwareentwickler</p>
+                                <p class="italic text-sm ">@ FEV EVA GmbH</p>
+                                <p class="mt-1 ">Entwicklung Hochvoltspeicher Batteriemangement-Systeme BMW Gen6</p>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div id="studium" class="mb-4">
+                    <h2 class="text-2xl font-bold mb-2">Studium</h2>
+                    <div class="flex flex-col space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-full h-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-lg font-semibold">M.Sc. Maschinenbau</p>
+                                <p class="italic text-sm ">@ Ruhr-Universität Bochum</p>
+                                <p class="mt-1 ">Masterarbeit: "Automatische Parametrierung der zonalen
+                                    modellprädiktiven
+                                    Klimaregelung in Fahrzeugen" <span class="italic ">@ BMW Group</span></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 ">
+                            <div class="w-8 h-8 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-full h-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-lg font-semibold">B.Eng. Maschinenbau</p>
+                                <p class="italic text-sm ">@ FH Bochum</p>
+                                <p class="mt-1 ">Bachelorarbeit: "CO2-neutrale Energieversorgung mit Wärme- und
+                                    Kältenetzen"
+                                    <span class="italic ">@ Siemens Energy AG</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 ">
+                            <div class="w-8 h-8 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-full h-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-lg font-semibold">B.Eng. Elektrotechnik</p>
+                                <p class="italic text-sm ">@ FH Südwestfalen</p>
+                                <p class="mt-1 ">Teilzeitstudium, Abschluss vsl. 2026
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div>
+                <div id="skills" class="mb-4">
+                    <h2 class="text-2xl font-bold mb-2">Skills</h2>
+                    <div class="flex flex-wrap flex-row gap-2">
+                        <div class="text-center">Regelungstechnik</div>
+                        <div class="text-center">Fahrzeugtechnik</div>
+                        <div class="text-center">MATLAB</div>
+                        <div class="text-center">Simulink</div>
+                        <div class="text-center">C++</div>
+                        <div class="text-center">C</div>
+                        <div class="text-center">Python</div>
+                        <div class="text-center">Angular</div>
+                        <div class="text-center">Next.js</div>
+                        <div class="text-center">Flask</div>
+                    </div>
+                </div>
+                <div id="projects" class="mb-4">
+                    <h2 class="text-2xl font-bold mb-2">Öffentliche Projekte</h2>
+                    <div class="project">
+                        <a href="https://example.com/maepp" class="block w-full h-full">
+                            <h3 class="text-l font-semibold">Maepp</h3>
+                            <p class="italic font-thin">Web-App</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l14 0" />
+                                    <path d="M15 16l4 -4" />
+                                    <path d="M15 8l4 4" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
+        <div class="footer text-center"><a>Datenschutz</a> &bull; <a>Impressum</a></div>
     </div>
     <script>
         // Get the toggle button
